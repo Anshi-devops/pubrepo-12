@@ -10,6 +10,7 @@ pipeline {
         stage('maven') {
             steps {
                 sh 'sudo yum install maven'
+                 echo "my name is anshi"
             }
         }
     }
