@@ -1,0 +1,16 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('gitinstall') {
+            steps {
+                sh 'sudo yum install git -y '
+            }
+        }
+        stage('maven') {
+            steps {
+                sh 'sudo yum install maven'
+            }
+        }
+    }
+}
